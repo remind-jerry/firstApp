@@ -20,30 +20,33 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="cxX-1p-cTf">
-                                <rect key="frame" x="50" y="99" width="314" height="185"/>
+                                <rect key="frame" x="50" y="99" width="314" height="170"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$33.50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5C-ck-Ef9">
-                                        <rect key="frame" x="0.0" y="0.0" width="314" height="43"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                        <nil key="textColor"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$33.50" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="G5C-ck-Ef9">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="38"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" red="0.72156862749999995" green="1" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rDC-Jo-fg2">
-                                        <rect key="frame" x="0.0" y="71" width="314" height="43"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rDC-Jo-fg2">
+                                        <rect key="frame" x="0.0" y="66" width="314" height="38"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sales" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ym6-yu-SrG">
-                                        <rect key="frame" x="0.0" y="142" width="314" height="43"/>
+                                        <rect key="frame" x="0.0" y="132" width="314" height="38"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                     </textField>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="aOP-bv-Nge"/>
+                                </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1nz-Xo-9f8">
-                                <rect key="frame" x="50" y="334" width="314" height="50"/>
+                                <rect key="frame" x="50" y="294" width="314" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="95D-8H-cCF"/>
                                 </constraints>
@@ -54,7 +57,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJa-vy-Mh8">
-                                <rect key="frame" x="178.5" y="434" width="57" height="36"/>
+                                <rect key="frame" x="178.5" y="364" width="57" height="36"/>
                                 <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="19"/>
                                 <state key="normal" title="RESET"/>
                                 <connections>
@@ -74,8 +77,8 @@
                             <constraint firstItem="cxX-1p-cTf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="bOo-Nu-fbT"/>
                             <constraint firstAttribute="bottom" secondItem="AZX-dN-ofl" secondAttribute="bottom" id="buh-XA-wW0"/>
                             <constraint firstAttribute="trailing" secondItem="AZX-dN-ofl" secondAttribute="trailing" id="nLR-sI-Y4I"/>
-                            <constraint firstItem="1nz-Xo-9f8" firstAttribute="top" secondItem="cxX-1p-cTf" secondAttribute="bottom" constant="50" id="re4-Kv-lZD"/>
-                            <constraint firstItem="EJa-vy-Mh8" firstAttribute="top" secondItem="1nz-Xo-9f8" secondAttribute="bottom" constant="50" id="y1U-Kl-914"/>
+                            <constraint firstItem="1nz-Xo-9f8" firstAttribute="top" secondItem="cxX-1p-cTf" secondAttribute="bottom" constant="25" id="re4-Kv-lZD"/>
+                            <constraint firstItem="EJa-vy-Mh8" firstAttribute="top" secondItem="1nz-Xo-9f8" secondAttribute="bottom" constant="20" id="y1U-Kl-914"/>
                             <constraint firstItem="cxX-1p-cTf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="y5V-SM-ed0"/>
                             <constraint firstItem="1nz-Xo-9f8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yVg-uk-JNk"/>
                         </constraints>

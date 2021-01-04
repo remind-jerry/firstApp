@@ -9,22 +9,32 @@ import UIKit
 
 final class ViewController: UIViewController {
 
+    // MARK: IBOutlets
+
     @IBOutlet private weak var priceTxt: UITextField!
     @IBOutlet private weak var salesTxt: UITextField!
     @IBOutlet private weak var totalPriceLbl: UILabel!
     @IBOutlet private weak var countButton: UIButton!
-    
+
+    // MARK: Private properties
+
+    private let totalPriceDefaultText = "Enter price and sales"
+
+    // MARK: Lifecycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        setup()
+        setupView()
     }
 
-    func setup() {
-        totalPriceLbl.text = ""
+    // MARK: Private methods
+
+    private func setupView() {
+        totalPriceLbl.text = totalPriceDefaultText
         totalPriceLbl.textColor = .green
-        countButton.layer.cornerRadius = countButton.bounds.height/2
-        
     }
+
+    // MARK: IBActions
 
     @IBAction func countTotalPrice(_ sender: Any) {
         let price = Double(priceTxt.text!)
@@ -34,14 +44,14 @@ final class ViewController: UIViewController {
            let sales = sales {
             let totalSales = price * sales
             let totalPrice = price + totalSales
-            totalPriceLbl.text = "$\(totalPrice)"
+            totalPriceLbl.text = "Total price: $\(totalPrice)"
         }
     }
     
     @IBAction func resetTapped(_ sender: UIButton) {
         priceTxt.text = ""
         salesTxt.text = ""
-        totalPriceLbl.text = ""
+        totalPriceLbl.text = totalPriceDefaultText
     }
 }
 
