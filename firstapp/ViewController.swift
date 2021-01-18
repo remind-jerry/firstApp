@@ -22,6 +22,8 @@ final class ViewController: UIViewController {
     func setup() {
         totalPriceLbl.text = ""
         totalPriceLbl.textColor = .green
+        priceTxt.textColor = .black
+        salesTxt.textColor = .black
         countButton.layer.cornerRadius = countButton.bounds.height/2
         
     }
